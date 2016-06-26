@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Inner from 'Inner';
 
 class App extends React.Component {
 
@@ -7,10 +8,10 @@ class App extends React.Component {
     return (
       <div>
         <p> Hello World!  I am {this.props.name}</p>
-        <p>Now :{this.props.now}</p>
+        <Inner now={new Date().toString()} />
       </div>
     );
   }
 }
 
-render(<App name="ZHAO Yan" now={new Date().toString()}/>, document.getElementById('app'));
+render(<App name="ZHAO Yan" />, document.getElementById('app'));
