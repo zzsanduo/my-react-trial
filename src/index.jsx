@@ -1,15 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-class App extends React.Component {
+var App = React.createClass({
+    render: function(){
+        return (
+          <div>
+            <p> Hello World!!!!</p>
+          </div>
+        );
+    }
+});
 
- render () {
-    return (
-      <div>
-        <p> Hello World!</p>
-      </div>
-    );
-  }
-}
 
 render(<App/>, document.getElementById('app'));
