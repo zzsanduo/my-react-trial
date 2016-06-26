@@ -8,3 +8,9 @@ class Inner extends React.Component {
         </div>
     }
 }
+
+Inner.propTypes = {
+    now: React.PropTypes.string.isRequired
+};
+
+export default Inner;

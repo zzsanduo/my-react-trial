@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Inner from 'Inner';
+import Inner from './inner.jsx';
 
 class App extends React.Component {
 
